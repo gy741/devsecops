@@ -36,6 +36,7 @@ sudo mv naabu /usr/local/bin/
 unzip subfinder_2.5.7_linux_amd64.zip
 sudo mv subfinder /usr/local/bin/
 
+nuclei
 
 # gitleaks 테스트 명령어 : gitleaks detect --source test_keys/ -v
 # semgrep 테스트 명령어 : semgrep scan --config auto DVWA/
