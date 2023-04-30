@@ -11,6 +11,7 @@ sudo apt-get install python3 python3-pip -y
 
 # semgrep 설치
 python3 -m pip install semgrep
+git clone https://github.com/digininja/DVWA.git
 
 # gitleaks 설치
 wget https://github.com/gitleaks/gitleaks/releases/download/v8.16.3/gitleaks_8.16.3_linux_x64.tar.gz
@@ -21,4 +22,9 @@ rm -rf gitleaks_8.16.3_linux_x64.tar.gz
 # 노출 키 테스트 저장소
 git clone https://github.com/trufflesecurity/test_keys
 
-# 테스트 명령어 : gitleaks detect --source test_keys/ -v
+
+
+# gitleaks 테스트 명령어 : gitleaks detect --source test_keys/ -v
+# semgrep 테스트 명령어 : semgrep scan --config auto DVWA/
+
+
