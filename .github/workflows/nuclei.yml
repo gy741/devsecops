@@ -1,8 +1,6 @@
 name: Nuclei - Vulnerability Scan
 
 on:
-    schedule:
-      - cron: '0 0 * * *'
     workflow_dispatch:
 
 jobs:
@@ -15,6 +13,8 @@ jobs:
         uses: projectdiscovery/nuclei-action@main
         with:
           target: https://example.com
+          flags: "-severity info -stats"
+
 
       - name: GitHub Workflow artifacts
         uses: actions/upload-artifact@v2
